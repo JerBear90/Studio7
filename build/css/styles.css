@@ -1,0 +1,96 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif; }
+
+section {
+  padding: 55px 0px !important; }
+
+.wings {
+  border-top: 2px solid #eee !important;
+  position: relative;
+  top: 31px;
+  width: 100%;
+  margin: 0px auto;
+  z-index: -1; }
+
+.border-left--thick {
+  border-left: 10px solid #5fcca9; }
+
+.hero-img-holder {
+  width: 100%;
+  height: 93vh;
+  max-height: 100vw;
+  background-image: url("../images/hero_bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
+
+.hero-copy {
+  position: absolute;
+  top: 0px;
+  margin-top: 80px; }
+
+.about-us {
+  width: 100%;
+  height: 750px;
+  background-image: url("../images/imac.png");
+  background-position: top right;
+  background-repeat: no-repeat; }
+
+.our-process .process-circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #5fcca9;
+  margin: 0px auto 15px auto;
+  background-color: #fff; }
+  .our-process .process-circle:hover {
+    background-color: #5fcca9;
+    border-color: #323131;
+    color: #fff; }
+  .our-process .process-circle .process-number {
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px; }
+
+.latest-work .work-overlay {
+  position: absolute;
+  top: 0px;
+  width: 22%;
+  height: 96%;
+  background-color: rgba(169, 224, 206, 0.9); }
+  .latest-work .work-overlay .work-description {
+    padding: 20px; }
+    .latest-work .work-overlay .work-description .title, .latest-work .work-overlay .work-description .role {
+      padding: 10px; }
+
+.clients {
+  width: 100%;
+  background-image: url("../images/pattern.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.testimonials .testimonial-box {
+  padding: 20px 20px 0px 20px;
+  border: 5px solid #5fcca9;
+  background: #323131;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 27px; }
+
+.testimonials .testimonial-attribute h6 {
+  font-size: 14px; }
+
+.fast-growing .background-green {
+  background-color: #5fcca9;
+  height: 550px;
+  position: absolute;
+  top: -55px;
+  width: 100%;
+  z-index: -1; }
+
+.fast-growing h1.extra-large {
+  font-size: 7rem; }

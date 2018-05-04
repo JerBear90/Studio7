@@ -1,0 +1,16 @@
+code{
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  font-family: $font-family;
+  background: lighten($light-gray, 6.4%);
+  border-radius: $global-radius;
+}
+
+pre > {
+  code{
+    display: block;
+    white-space: pre;
+  }
+}

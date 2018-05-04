@@ -1,0 +1,43 @@
+{
+  "name": "bari-scss",
+  "version": "2.0.4",
+  "description": "A Barebones Framework - Inspired by Skeleton",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass"
+  },
+  "bugs": {
+    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass/issues"
+  },
+  "homepage": "",
+  "author": "",
+  "keywords": [
+    "skeleton",
+    "sass",
+    "scss",
+    "responsive",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0",
+    "gulp-connect": "^5.4.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-pug-beautify": "0.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-serve": "^1.4.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-watch": "^5.0.0",
+    "gulp-watch-pug": "^1.0.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}

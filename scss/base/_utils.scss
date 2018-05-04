@@ -1,0 +1,90 @@
+// Utilities
+
+// Full Width
+.full-width{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.max--full-width{
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.float-right{
+	float: right !important;
+}
+
+.float-left{
+	float:left;
+}
+
+.float-none{
+	float:none !important;
+}
+
+.text-justify{
+	text-align: justify;
+}
+.text-left{
+	text-align: left !important;
+}
+.text-center{
+	text-align: center !important;
+}
+.text-right{
+	text-align: right !important;
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
+
+.col-centered{
+	float: none !important;
+  margin: 0 auto !important;
+}
+
+.hide-on-mobile-diplay{
+	display: none;
+}
+.show-above-tablet-display{
+	display: none;
+}
+
+@media (#{$bp-mobile-phone}) {
+	.xs-no-display{
+		display: none;
+	}
+	.xs-text-center{
+		text-align: center !important;
+	}
+	.xs-block{
+		display: block !important;
+	}
+	.xs-mt-0{
+		marin-top: 0px;
+	}
+}
+
+@media (#{$bp-larger-than-phablet}) {
+	.xs-no-display{
+		display: block;
+	}
+}
+
+
+// Margin & Padding Helpers
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}

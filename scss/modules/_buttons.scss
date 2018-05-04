@@ -1,0 +1,258 @@
+// Variables
+$btn-border-duration: 0.3s;
+$btn-border-size: 2.1px;
+$btn-font-size: .8em;
+$btn-letter-spacing: 2.5px;
+$btn-line-height: 1.8em;
+$btn-border-color: #5fcca9;
+$btn-border-width: 200px;
+$btn-border-height: 45px;
+$btn-border-size-radius: 0;
+
+// Button and Input shared Qualities
+%inital-state{
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: $secondary-color;
+  text-align: center;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: $global-radius;
+  border: 1px solid $border-color;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  font-weight: $medium;
+}
+
+// Btn - Buttons
+.btn,
+button{
+    @extend %inital-state;
+    transition: all .3s;
+    h4{
+      font-weight: $bold;
+      line-height: normal;
+      letter-spacing: .3px;
+    }
+}
+
+%btn-text-color{
+  color: $white;
+}
+.btn-primary{
+  background-color: $primary-color;
+  @extend %btn-text-color;
+  &:hover{
+    background-color: darken($primary-color, 12%);
+  }
+}
+
+.btn-secondary{
+  background-color: $secondary-color;
+  @extend %btn-text-color;
+  &:hover{
+    background-color: darken($secondary-color, 12%);
+  }
+}
+
+.btn-tertiary{
+  background-color: $tertiary-color;
+  @extend %btn-text-color;
+  &:hover{
+    background-color: darken($tertiary-color, 12%);
+  }
+}
+
+.btn-white{
+  background-color: $white;
+  color: $dark-gray;
+  font-weight: $bold;
+  border-color: $white;
+  &:hover{
+    background-color: $dark-gray;
+    color: $white;
+    border-color: $dark-gray;
+  }
+}
+
+.btn-large{
+  height: 56px;
+  padding: 7px 20px;
+  font-size: 21px;
+}
+
+.btn-green{
+  background-color: $green;
+  color: $white;
+  border-color: $green;
+  @extend %btn-text-color;
+  &:hover{
+    background-color: darken($green, 12%);
+  }
+}
+
+.btn-dark-gray{
+  background-color: $dark-gray;
+  border: 1px solid $dark-gray;
+  @extend %btn-text-color;
+  &:hover{
+    background-color: darken($dark-gray, 12%);
+  }
+}
+
+input{
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"]{
+      @extend %inital-state;
+  }
+}
+
+// Mixins
+@mixin border-radius($btn-border-size-radius, $sideH) {
+  @if $sideH != 'all' {
+    -webkit-border-top-#{$sideH}-radius: $btn-border-size-radius;
+    -moz-border-top-#{$sideH}-radius: $btn-border-size-radius;
+    border-top-#{$sideH}-radius: $btn-border-size-radius;
+    -webkit-border-bottom-#{$sideH}-radius: $btn-border-size-radius;
+    -moz-border-bottom-#{$sideH}-radius: $btn-border-size-radius;
+    border-bottom-#{$sideH}-radius: $btn-border-size-radius;
+  } @else if $sideH == 'all' {
+    -webkit-border-radius: $btn-border-size-radius;
+    -moz-border-radius: $btn-border-size-radius;
+    border-radius: $btn-border-size-radius;
+  }
+}
+
+@mixin sub-button {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  display: block;
+  opacity: 0;
+}
+
+// Button Border Animate (on Hover)
+.btn-border-animate {
+  width: $btn-border-width;
+  position: relative;
+  border: 1px solid $light-gray;
+  height: $btn-border-height;
+  @include border-radius($btn-border-size-radius, 'all');
+    &:hover .hoverBtn:before,
+    &:hover .hoverBtn:after {
+      opacity: 1;
+      -webkit-animation: btnBorderX $btn-border-duration;
+      /* Chrome, Safari, Opera */
+      animation: btnBorderX $btn-border-duration;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+      animation-direction: normal;
+    }
+    &:hover .hoverBtn-bottom:before,
+    &:hover .hoverBtn-bottom:after {
+      opacity: 1;
+      -webkit-animation: btnBorderZ $btn-border-duration;
+      /* Chrome, Safari, Opera */
+      animation: btnBorderZ $btn-border-duration;
+      animation-delay: $btn-border-duration;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+      animation-direction: normal;
+    }
+  a {
+    p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+      color: $light-gray;
+      text-transform: uppercase;
+      letter-spacing: $btn-letter-spacing;
+      font-size: $btn-font-size;
+      line-height: $btn-border-height;
+    }
+    &:hover {
+
+      p { color: $green; }
+
+    }
+  }
+}
+
+.hoverBtn {
+  width: 100%;
+  height: $btn-border-height;
+  position: absolute;
+  top: -1px;
+
+  &:before {
+    @include sub-button;
+    border-top: solid $btn-border-size $btn-border-color;
+    border-left: solid $btn-border-size $btn-border-color;
+    @include border-radius($btn-border-size-radius, 'left');
+    right: $btn-border-width/2;
+  }
+  &:after {
+    @include sub-button;
+    border-top: solid $btn-border-size $btn-border-color;
+    border-right: solid $btn-border-size $btn-border-color;
+    @include border-radius($btn-border-size-radius, 'right');
+    left: $btn-border-width/2;
+  }
+}
+
+.hoverBtn-bottom {
+  width: 100%;
+  height: $btn-border-height;
+  position: absolute;
+
+
+  &:before {
+    @include sub-button;
+    height: $btn-border-height;
+    border-bottom: solid $btn-border-size $btn-border-color;
+    @include border-radius($btn-border-size-radius, 'right');
+    right: 0;
+  }
+  &:after {
+    @include sub-button;
+    height: $btn-border-height;
+    border-bottom: solid $btn-border-size $btn-border-color;
+    @include border-radius($btn-border-size-radius, 'left');
+    left: 0;
+  }
+}
+
+
+@keyframes btnBorderX {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: $btn-border-width/2;
+    height: 0;
+  }
+  100% {
+    width: $btn-border-width/2;
+    height: $btn-border-height;
+  }
+}
+
+@keyframes btnBorderZ {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: $btn-border-width/2;
+  }
+}

@@ -1,0 +1,27 @@
+.background-white{
+  background-color: $white !important;
+  color: $black !important;
+}
+.background-blue{
+  background-color: $blue;
+  color: $white;
+}
+.background-black{
+  background-color: $black !important;
+  color: $white !important;
+}
+.background-green{
+  background-color: $green;
+  color: $black;
+}
+.background-gray{
+  background-color: $light-gray;
+  color: $black;
+}
+.background-dark-gray{
+  background-color: $dark-gray;
+  color: $white;
+}
+.background-white--transparent{
+  background-color: hsla(0, 100%,100%, 0.5)
+}
