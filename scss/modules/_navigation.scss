@@ -5,7 +5,7 @@
   z-index: 10000;
   color: #fff;
   transition: .5s all;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   a{
     color: #000;
     margin-top: 20px;
@@ -16,16 +16,19 @@
     list-style: none;
     overflow: hidden;
   }
-  li a {
-    display: block;
-    // padding: 20px 20px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    transition: .2s all;
-    border-bottom: 0px solid #eee;
+  li {
+    padding-bottom: 10px;
+    transition: .5s all;
     &:hover {
-      // border-bottom: 2px solid #eee;
+      // background-color: hsla(0,0%, 0%, 0.3);
+      font-weight: bold;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #eee;
+      font-size: 14px;
+      transition: .2s all;
     }
   }
   .menu-btn:hover {
@@ -132,16 +135,6 @@
     }
     .menu-icon {
       display: none;
-    }
-  }
-}
-
-.footer{
-  ul{
-    li{
-      a{
-        font-size: 12px;
-      }
     }
   }
 }

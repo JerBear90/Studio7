@@ -27,6 +27,7 @@ $btn-border-size-radius: 0;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
   font-weight: $medium;
+  letter-spacing: .5px;
 }
 
 // Btn - Buttons
@@ -80,6 +81,14 @@ button{
   }
 }
 
+.btn-nav{
+  height: auto;
+  padding: 1px 17px;
+  font-size: 14px;
+  top: -8px !important;
+  position: relative;
+}
+
 .btn-large{
   height: 56px;
   padding: 7px 20px;
@@ -88,7 +97,7 @@ button{
 
 .btn-green{
   background-color: $green;
-  color: $white;
+  color: $white !important;
   border-color: $green;
   @extend %btn-text-color;
   &:hover{

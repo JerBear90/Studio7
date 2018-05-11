@@ -43,6 +43,8 @@ html(lang="en")
             a(href="#about") About
           li
             a(href="#contact") Contact
+          li
+            a.btn.btn-green.btn-nav.xs-block(href='#contact') Request a quote
 
     //- _HeroUnit
     #home-hero.container-full(data-aos='fade-in' data-aos-delay="0")
@@ -63,35 +65,171 @@ html(lang="en")
                 .twelve.cols
                   .bounce.fa.fa-angle-double-down.fa-3x.text-green
 
-
     a.scroll-spacing
-    section.container.services#services
-      .row
-        .nine.cols.text-center.col-centered
-          h1.text-uppercase.bold.mb-10 Services provided
-      .row.mt-20
-        .three.cols(data-aos='fade-up' data-aos-delay="100" data-aos-offset="100")
-          h4.text-uppercase.book.mb-10 Digital Branding
-          p Interlace creative design with solid marketing and branding principles to bring you a strong brand.
-        .three.cols(data-aos='fade-up' data-aos-delay="100" data-aos-offset="150")
-          h4.text-uppercase.book.mb-10 SEO Optimization
-          p Helping you stand out from the competition by bringing you to the front page of search results.
-        .three.cols(data-aos='fade-up' data-aos-delay="100" data-aos-offset="200")
-          h4.text-uppercase.book.mb-10 Out Perform
-          p Finding the percise method to reach your audience can be tough, don't worry we can help with that too.
-        .three.cols(data-aos='fade-up' data-aos-delay="100" data-aos-offset="250")
-          h4.text-uppercase.book.mb-10 +Conversion
-          p Each page has a clearly defined conversion goal we work just as hard a your business to achieve.
+    section.services#services
+      .container
+        .row
+          .nine.cols.text-center.col-centered
+            h1.text-uppercase.bold.mb-10 Services provided
+        .row.mt-20
+          .three.cols(data-aos='fade-up' data-aos-delay="100" data-aos-offset="100")
+            h4.text-uppercase.book.mb-10 Digital Branding
+            p Interlace creative design with solid marketing and branding principles to bring you a strong brand.
+          .three.cols(data-aos='fade-up' data-aos-delay="100" data-aos-offset="150")
+            h4.text-uppercase.book.mb-10 SEO Optimization
+            p Helping you stand out from the competition by bringing you to the front page of search results.
+          .three.cols(data-aos='fade-up' data-aos-delay="100" data-aos-offset="200")
+            h4.text-uppercase.book.mb-10 Out Perform
+            p Finding the percise method to reach your audience can be tough, don't worry we can help with that too.
+          .three.cols(data-aos='fade-up' data-aos-delay="100" data-aos-offset="250")
+            h4.text-uppercase.book.mb-10 +Conversion
+            p Each page has a clearly defined conversion goal we work just as hard a your business to achieve.
 
     section.about-us.background-gray.slanted-background#about
       .container
-        .six.cols(data-aos='fade-right' data-aos-offset="400")
+        .six.cols.pr-30
           h1.text-uppercase.bold Rendering high quality and cost effective solutions
           hr
           h5 Our Goal, since the beginning has been to create a unique and captivating experience for both the client and user.
           p.medium With years of experience in the website design and development industry, we pride ourselves on creating unique, creative and quality websites. We utilze the latest coding and developing techniques, from which are then integrated into every website built. Every website is upheld to this standard.
           a.btn.btn-green.btn-large.xs-block(href='#contact') Request a quote
+    
+    section
+      .container
+        .row
+          .twelve.cols.text-center
+            h6.mb-0 We love what we do
+            h1.text-uppercase.bold Our Work
+            hr.green.two.cols.col-centered.mt-0.mb-20
 
+      .latest-work
+        .row
+          .twelve.cols.col-centered
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/soar.jpg' data-aos='zoom-in-up')
+              .workOverlay
+                .text
+                  h1 Soar
+                  h6 Design &amp; Development
+                  a.btn.btn-dark-gray(href="http://www.soarequities.com" target='_blank') Launch Site
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/duvi.jpg' data-aos='zoom-in-up' data-aos-delay="100")
+              .workOverlay
+                .text
+                  h1 Duvi Stahler
+                  h6 Redesign &amp; Develop
+                  a.btn.btn-dark-gray(href="http://www.duvistalher.com" target='_blank') Launch Site
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/ug.jpg' data-aos='zoom-in-up' data-aos-delay="200")
+              .workOverlay
+                .text
+                  h1 Unlocking Greatness
+                  h6 Design &amp; Development
+                  a.btn.btn-dark-gray(href="http://www.unlockinggreatnessbook.com" target='_blank') Launch Site
+        .row
+          .twelve.cols.col-centered
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/filemaker.jpg' data-aos='zoom-in-up' data-aos-delay="300")
+              .workOverlay
+                .text
+                  h1 FileMaker
+                  h6 Design &amp; Development
+                  a.btn.btn-dark-gray(href="http://www.filemaker.com" target='_blank') Launch Site
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/eventseeker.jpg' data-aos='zoom-in-up' data-aos-delay="400")
+              .workOverlay
+                .text
+                  h1 Eventseeker
+                  h6 Blog Development
+                  a.btn.btn-dark-gray(href="http://www.blog.eventseeker.com" target='_blank') Launch Site
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/loinsf.jpg' data-aos='zoom-in-up' data-aos-delay="500")
+              .workOverlay
+                .text
+                  h1 The LoinSf
+                  h6 eCommerce Development
+                  a.btn.btn-dark-gray(href="http://www.theloinsf.com" target='_blank') Launch Site
+
+        .row
+          .twelve.cols.col-centered
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/rts.jpg' data-aos='zoom-in-up' data-aos-delay="600")
+              .workOverlay
+                .text
+                  h1 Rape Trauma Services
+                  h6 Design &amp; Development
+                  a.btn.btn-dark-gray(href="http://www.rapetraumaservices.org" target='_blank') Launch Site
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/jfwd.jpg' data-aos='zoom-in-up' data-aos-delay="700")
+              .workOverlay
+                .text
+                  h1 Jf-Wd
+                  h6 Portfolio Development
+                  a.btn.btn-dark-gray(href="http://www.jf-wd.com" target='_blank') Launch Site
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/hired.jpg' data-aos='zoom-in-up' data-aos-delay="800")
+              .workOverlay
+                .text
+                  h1 Hired
+                  h6 Rebranding &amp; Development
+                  a.btn.btn-dark-gray(href="http://www.hired.com" target='_blank') Launch Site
+
+        .row
+          .twelve.cols.col-centered
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/toyota.jpg' data-aos='zoom-in-up' data-aos-delay="900")
+              .workOverlay
+                .text
+                  h1 Toyota
+                  h6 Landing Page Development
+                  a.btn.btn-dark-gray(href="http://toyota.com/" target='_blank') Launch Site
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/mca.jpg' data-aos='zoom-in-up' data-aos-delay="1000")
+              .workOverlay
+                .text
+                  h1 MCAHomes
+                  h6 Real Estate Portfolio
+                  a.btn.btn-dark-gray(href="http://mcahomesolutions.com/" target='_blank') Launch Site
+            .latest-work--item.four.cols
+              img.latestWorkImg(src='images/client/adcolony.jpg' data-aos='zoom-in-up' data-aos-delay="1100")
+              .workOverlay
+                .text
+                  h1 AdColony
+                  h6 Ad Platform Development
+                  a.btn.btn-dark-gray(href="http://www.operamediaworks.com" target='_blank') Launch Site
+      .clients
+        .container
+          h2.medium.text-center.text-uppercase Our Clients
+          hr.xs-no-display.green.two.cols.col-centered.mt-0.mb-20
+          .row.mt-40
+            .client-slider
+              div
+                img(src='images/client-logo/giants.png' data-aos='fade-in' data-aos-delay="100")
+              div
+                img(src='images/client-logo/eventseeker.png' data-aos='fade-in' data-aos-delay="100")
+              div
+                img(src='images/client-logo/opera.png' data-aos='fade-in' data-aos-delay="100")
+              div
+                img(src='images/client-logo/mcdonalds.png' data-aos='fade-in' data-aos-delay="100")
+              div
+                img(src='images/client-logo/toyota.png' data-aos='fade-in' data-aos-delay="100")
+              div
+                img(src='images/client-logo/hnlpartners.png' data-aos='fade-in' data-aos-delay="100")
+              div
+                img(src='images/client-logo/oakland.png' data-aos='fade-in' data-aos-delay="100")
+              div
+                img(src='images/client-logo/filemaker.png' data-aos='fade-in' data-aos-delay="100")
+                  
+                  
+    section.background-dark-blue.border-left--thick.slanted-background
+      .container
+        .row.mt-10
+          .nine.cols
+            h3.bold.mb-0 We'd love to hear about your project!
+            h5.book.mt-0 Let's talk. No project is too big or small.
+          .three.cols
+            a.btn.btn-green.btn-large.mt-20(href='#contact') Request a quote
+            
     section.our-process
       .container
         .row
@@ -122,205 +260,46 @@ html(lang="en")
             p.text-center Let's get your super awesome website out to the public. Crack open the champagne it's time to celebrate.
           .wings.xs-no-display(data-aos='fade-right' data-aos-delay="550")
 
-    section.background-dark-gray.border-left--thick
-      .container
-        .row.mt-10
-          .nine.cols
-            h3.book We'd love to hear about your project!
-          .three.cols(data-aos='fade-left' data-aos-delay="400")
-            a.btn.btn-green.btn-large(href='#contact') Request a quote
-
-    section.background-gray#clients
-      .container
-        .row
-          .twelve.cols.text-center
-            h6.mb-0 We love what we do
-            h1.text-uppercase.bold Our Work
-            hr.green.two.cols.col-centered.mt-0.mb-20
-
-      .latest-work
-        .row
-          .twelve.cols.col-centered
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/soar.jpg' data-aos='zoom-in-up')
-              .workOverlay
-                .text
-                  h1 Soar
-                  h6 Design &amp; Development
-                  a.btn.btn-dark-gray(href="http://www.soarequities.com" target='_blank') Launch Site
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/duvi.jpg' data-aos='zoom-in-up' data-aos-delay="200")
-              .workOverlay
-                .text
-                  h1 Duvi Stahler
-                  h6 Redesign &amp; Develop
-                  a.btn.btn-dark-gray(href="http://www.duvistalher.com" target='_blank') Launch Site
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/ug.jpg' data-aos='zoom-in-up' data-aos-delay="300")
-              .workOverlay
-                .text
-                  h1 Unlocking Greatness
-                  h6 Design &amp; Development
-                  a.btn.btn-dark-gray(href="http://www.unlockinggreatnessbook.com" target='_blank') Launch Site
-        .row
-          .twelve.cols.col-centered
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/filemaker.jpg' data-aos='zoom-in-up' data-aos-delay="400")
-              .workOverlay
-                .text
-                  h1 FileMaker
-                  h6 Design &amp; Development
-                  a.btn.btn-dark-gray(href="http://www.filemaker.com" target='_blank') Launch Site
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/eventseeker.jpg' data-aos='zoom-in-up' data-aos-delay="500")
-              .workOverlay
-                .text
-                  h1 Eventseeker
-                  h6 Blog Development
-                  a.btn.btn-dark-gray(href="http://www.blog.eventseeker.com" target='_blank') Launch Site
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/loinsf.jpg' data-aos='zoom-in-up' data-aos-delay="600")
-              .workOverlay
-                .text
-                  h1 The LoinSf
-                  h6 eCommerce Development
-                  a.btn.btn-dark-gray(href="http://www.theloinsf.com" target='_blank') Launch Site
-
-        .row
-          .twelve.cols.col-centered
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/rts.jpg' data-aos='zoom-in-up' data-aos-delay="600")
-              .workOverlay
-                .text
-                  h1 Rape Trauma Services
-                  h6 Design &amp; Development
-                  a.btn.btn-dark-gray(href="http://www.rapetraumaservices.org" target='_blank') Launch Site
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/jfwd.jpg' data-aos='zoom-in-up' data-aos-delay="600")
-              .workOverlay
-                .text
-                  h1 Jf-Wd
-                  h6 Portfolio Development
-                  a.btn.btn-dark-gray(href="http://www.jf-wd.com" target='_blank') Launch Site
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/hired.jpg' data-aos='zoom-in-up' data-aos-delay="400")
-              .workOverlay
-                .text
-                  h1 Hired
-                  h6 Rebranding &amp; Development
-                  a.btn.btn-dark-gray(href="http://www.hired.com" target='_blank') Launch Site
-
-        .row
-          .twelve.cols.col-centered
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/toyota.jpg' data-aos='zoom-in-up' data-aos-delay="500")
-              .workOverlay
-                .text
-                  h1 Toyota
-                  h6 Landing Page Development
-                  a.btn.btn-dark-gray(href="http://toyota.com/" target='_blank') Launch Site
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/mca.jpg' data-aos='zoom-in-up' data-aos-delay="500")
-              .workOverlay
-                .text
-                  h1 MCAHomes
-                  h6 Real Estate Portfolio
-                  a.btn.btn-dark-gray(href="http://mcahomesolutions.com/" target='_blank') Launch Site
-            .latest-work--item.four.cols
-              img.latestWorkImg(src='images/client/adcolony.jpg' data-aos='zoom-in-up' data-aos-delay="600")
-              .workOverlay
-                .text
-                  h1 AdColony
-                  h6 Ad Platform Development
-                  a.btn.btn-dark-gray(href="http://www.operamediaworks.com" target='_blank') Launch Site
-
-
-    section.clients
-      .container
-        h1.bold.text-center.text-uppercase Our Clients
-        .row
-          .client-slider
-            div
-              a(href="" target="_blank")
-                img(src='images/client-logo/giants.png' data-aos='fade-in' data-aos-delay="100")
-            div
-              a(href="" target="_blank")
-                img(src='images/client-logo/eventseeker.png' data-aos='fade-in' data-aos-delay="100")
-            div
-              a(href="" target="_blank")
-                img(src='images/client-logo/opera.png' data-aos='fade-in' data-aos-delay="100")
-            div
-              a(href="" target="_blank")
-                img(src='images/client-logo/mcdonalds.png' data-aos='fade-in' data-aos-delay="100")
-            div
-              a(href="" target="_blank")
-                img(src='images/client-logo/toyota.png' data-aos='fade-in' data-aos-delay="100")
-            div
-              a(href="" target="_blank")
-                img(src='images/client-logo/hnlpartners.png' data-aos='fade-in' data-aos-delay="100")
-            div
-              a(href="" target="_blank")
-                img(src='images/client-logo/oakland.png' data-aos='fade-in' data-aos-delay="100")
-            div
-              a(href="" target="_blank")
-                img(src='images/client-logo/filemaker.png' data-aos='fade-in' data-aos-delay="100")
-
-
-    section.slanted-background.fast-growing
-      .container--full
-        .row
-          .eight.cols.xs-no-display.mt-40.mb-50
-            img(src='images/join_hero.png' data-aos='fade-right' data-aos-delay="500" align="middle")
-          .four.cols.ml-0.text-center
-            h1.text-white.extra-large.mb-0 Join our fast growing clientel
-            .row.mt-20
-              .twelve.cols
-                a.btn.btn-dark-gray.btn-large(href='#contact' data-aos='zoom-in' data-aos-delay="200") Request a quote
-
-    section
-      .container
-        .row
-          .three.cols.text-center
-            h1.text-green.counter.bold 20
-            h5.medium Truley Satisfied Clients
-          .three.cols.text-center
-            h1.text-green.counter.bold 36
-            h5.medium Websites Published
-          .three.cols.text-center
-            h1.text-green.counter.bold 50
-            h5.medium Telephonic Conversations
-          .three.cols.text-center
-            h1.text-green.counter.bold 107
-            h5.medium Landing Pages Created
-
-
-    section.testimonials.slanted-background.background-dark-gray
+    section.testimonial-container.background-dark-blue
       .container
         .row
           .twelve.cols.text-center
             h6.mb-0 Real People with Real Results
             h1.bold.text-uppercase What people are saying
-      .container-full
-        .row.slider
-          div
-            .testimonial-box
-              p Studio7 was a breeze to work with. They did everything I asked and were patient with me and my schedule. They also were very knowledgeable and delivered quality work.
-            .testimonial-attribute.pl-50.mt-15
-              h5.mb-0.book.text-uppercase Ray Allen
-              p.bold.text-uppercase Real Estate Agent
-          div
-            .testimonial-box
-              p Studio7 was amazing to work with. They have great communication skills and really follow through with deadlines. I would recommend working with Studio7 to everyone.
-            .testimonial-attribute.pl-50.mt-15
-              h5.mb-0.book.text-uppercase Nicole Kiran
-              p.bold.text-uppercase Consultant
-          div
-            .testimonial-box
-              p Studio7 did a terrific job on my project. It was a small one, but they gave it equal attention as if it was much larger. Great job!
-            .testimonial-attribute.pl-50.mt-15
-              h5.mb-0.book.text-uppercase Mitchell Caplan
-              p.bold.text-uppercase Book Author
-
+      .container.mt-40
+        .row
+          .testimonial-slider
+            div
+              .testimonial-box
+                p Studio7 was a breeze to work with. They did everything I asked and were patient with me and my schedule. They also were very knowledgeable and delivered quality work.
+              .testimonial-attribute.pl-50.mt-15
+                h5.mb-0.book.text-uppercase Ray Allen
+                p.bold.text-uppercase Real Estate Agent
+              
+            div
+              .testimonial-box
+                p Studio7 was amazing to work with. He's creative and understands the client's needs. He has great communication skills and really follows through with deadlines. I would recommend working with Jeramee to everyone, and will definitely contact him again if another job appears!
+              .testimonial-attribute.pl-50.mt-15
+                h5.mb-0.book.text-uppercase Nicole Kiran
+                p.bold.text-uppercase Frikadell
+            div
+              .testimonial-box
+                p Studio7  did a terrific job on my project. It was a small one, but he gave it equal attention as if it was much larger. Great job!
+              .testimonial-attribute.pl-50.mt-15
+                h5.mb-0.book.text-uppercase Mitchell Caplan
+                p.bold.text-uppercase Author
+            div
+              .testimonial-box
+                p Studio7 was great in all respects. He was communicative, available and quick to make any changes that were necessary. He really took the time to make sure every aspect of the website worked well.
+              .testimonial-attribute.pl-50.mt-15
+                h5.mb-0.book.text-uppercase David Stalher
+                p.bold.text-uppercase Marketing Specialist
+            div
+              .testimonial-box
+                p Studio7 was great in all respects. He was communicative, available and quick to make any changes that were necessary. He really took the time to make sure every aspect of the website worked well.
+              .testimonial-attribute.pl-50.mt-15
+                h5.mb-0.book.text-uppercase Pierce Gaynor
+                p.bold.text-uppercase Real Estate Agent
 
     section.contact-us#contact
       .container
@@ -331,19 +310,16 @@ html(lang="en")
             hr.green.mt-0
             p We would love to hear about your project and how we can collaborate to get the job done.
             p Not quite ready for a project, but want to see how much it might cost? Feel free to contact us, we are more than happy to hear your vision and give you an estimate on pricing.
-            p.medium Fill out the adjacent form and we'll be sure to reach out to you as soon as possible (within 24hrs).
-
             p.bold If it's an emergency feel free to reach out directly via email @
               span
                 a.text-dark-gray(href="mailto:'studio7inquiry@gmail.com'") Studio7
           .six.cols.float-right
             script(src="https://form.jotform.com/jsform/80647736784168")
 
-    section.footer.background-dark-gray
+    section.footer.background-dark-blue
       .container
         a#scroll(href='#', style='display: none;')
           span
-
         .row
           .six.cols.xs-text-center
             h3.mb-0.text-uppercase.bold Studio
@@ -364,10 +340,8 @@ html(lang="en")
               li
                 a(href="#contact") Contact
           .six.cols
-            p.mt-20.text-right.xs-text-center &copy;Copyright 2018
-
-
+            p.copyright.mt-20.text-right.xs-text-center &copy;Copyright 2018
 
       script(src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js')
-      script(src='https://threejs.org/examples/js/libs/stats.min.js')
       script(src='js/scripts.js')
+      script(src='js/driftmsgclient.js')

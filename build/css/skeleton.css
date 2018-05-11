@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 * Skeleton V 0.0.1
 * Copyright 2018, Jeramee Flemming
@@ -672,7 +673,7 @@ img {
   z-index: 10000;
   color: #fff;
   transition: .5s all;
-  padding-bottom: 10px; }
+  padding-bottom: 7px; }
   .header a {
     color: #000;
     margin-top: 20px; }
@@ -681,13 +682,17 @@ img {
     padding: 0;
     list-style: none;
     overflow: hidden; }
-  .header li a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    transition: .2s all;
-    border-bottom: 0px solid #eee; }
+  .header li {
+    padding-bottom: 10px;
+    transition: .5s all; }
+    .header li:hover {
+      font-weight: bold; }
+    .header li a {
+      display: block;
+      text-decoration: none;
+      color: #eee;
+      font-size: 14px;
+      transition: .2s all; }
   .header .menu-btn:hover {
     background-color: #f4f4f4; }
   .header .logo {
@@ -762,9 +767,6 @@ img {
     max-height: none; }
   .header .menu-icon {
     display: none; } }
-
-.footer ul li a {
-  font-size: 12px; }
 
 body > div:nth-child(15) > canvas:nth-child(1) {
   display: none !important; }
@@ -1156,6 +1158,10 @@ body > div:nth-child(15) > canvas:nth-child(1) {
   background-color: #333;
   color: #FFFFFF; }
 
+.background-dark-blue {
+  background-color: #323840;
+  color: #FFFFFF; }
+
 .background-white--transparent {
   background-color: rgba(255, 255, 255, 0.5); }
 
@@ -1176,7 +1182,8 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
   cursor: pointer;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  letter-spacing: .5px; }
 
 .btn,
 button {
@@ -1215,6 +1222,13 @@ button {
     color: #FFFFFF;
     border-color: #333; }
 
+.btn-nav {
+  height: auto;
+  padding: 1px 17px;
+  font-size: 14px;
+  top: -8px !important;
+  position: relative; }
+
 .btn-large {
   height: 56px;
   padding: 7px 20px;
@@ -1222,7 +1236,7 @@ button {
 
 .btn-green {
   background-color: #5fcca9;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border-color: #5fcca9; }
   .btn-green:hover {
     background-color: #39b48d; }
@@ -1593,10 +1607,271 @@ form {
 .slider {
   margin-top: 30px; }
 
+.slick-slide {
+  margin: 0 5px; }
+
+.slick-list {
+  margin: 0px -5px 0px -5px; }
+
+button.slick-next, button.slick-next:hover {
+  position: absolute;
+  top: 41%;
+  right: 54px;
+  width: 47px;
+  height: 75px;
+  background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+  background-size: 95px; }
+
+button.slick-prev, button.slick-prev:hover {
+  position: absolute;
+  top: 41%;
+  left: 15px;
+  z-index: 1;
+  width: 47px;
+  height: 75px;
+  background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+  background-size: 95px;
+  background-position-x: right; }
+
+.slick-prev:before, .slick-next:before {
+  font-size: 70px;
+  color: #EA8496;
+  line-height: inherit;
+  font-weight: bold; }
+
+/* Slick Slider Styles -- Provided by https://kenwheeler.github.io/slick/ */
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: auto; }
+
+.slick-list:focus {
+  outline: none; }
+
+.slick-list.dragging {
+  cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block; }
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: ''; }
+
+.slick-track:after {
+  clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+
+.slick-slide img {
+  display: block; }
+
+.slick-slide.slick-loading img {
+  display: none; }
+
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("http://maggiesadler.com/wp-content/uploads/2015/10/ajax-loader.gif") center center no-repeat; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent; }
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent; }
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1; }
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25; }
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -25px; }
+
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto; }
+
+.slick-prev:before {
+  content: ''; }
+
+[dir='rtl'] .slick-prev:before {
+  content: '';
+  font-weight: bold;
+  font-size: 20px; }
+
+.slick-next {
+  right: -25px; }
+
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px; }
+
+.slick-next:before {
+  content: ''; }
+
+[dir='rtl'] .slick-next:before {
+  content: ''; }
+
+/* Dots */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer; }
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent; }
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none; }
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1; }
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black; }
+
 .slick-initialized .slick-slide {
   display: inline-block !important;
   vertical-align: middle;
   float: none; }
+
+.slick-initialized .slick-dots li button:before {
+  color: #fff !important; }
 
 @media (max-width: 549px) {
   .slider {
@@ -1702,11 +1977,8 @@ section {
   border-radius: 50%;
   border: 1px solid #5fcca9;
   margin: 0px auto 15px auto;
-  background-color: #fff; }
-  .our-process .process-circle:hover {
-    background-color: #5fcca9;
-    border-color: #323131;
-    color: #fff; }
+  background-color: #5fcca9;
+  color: #fff; }
   .our-process .process-circle .process-number {
     text-align: center;
     font-size: 30px;
@@ -1720,7 +1992,7 @@ section {
   .latest-work .workOverlay {
     position: absolute;
     width: 100%;
-    height: 97.5%;
+    height: 98.5%;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -1752,6 +2024,7 @@ section {
     opacity: 1; }
 
 .clients {
+  margin-top: 80px;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -1764,16 +2037,18 @@ section {
       transition: 50ms filter linear, 50ms -webkit-filter linear;
       filter: none; }
 
-.testimonials .testimonial-box {
+.testimonial-container .slick-slide {
+  margin: 0px 40px !important; }
+
+.testimonial-container .testimonial-box {
   padding: 20px 20px 0px 20px;
-  background-color: #333;
   color: #FFFFFF;
   margin-left: 15px;
-  width: 200px;
+  width: auto;
   border: 3px solid #5fcca9;
   position: relative;
   margin: 0px auto; }
-  .testimonials .testimonial-box:after {
+  .testimonial-container .testimonial-box:after {
     content: '';
     display: block;
     position: absolute;
@@ -1781,13 +2056,13 @@ section {
     left: 33px;
     width: 10px;
     height: 10px;
-    background: #333;
+    background: #323840;
     border-right: 3px solid #5fcca9;
     border-bottom: 3px solid #5fcca9;
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg); }
 
-.testimonials .testimonial-attribute h6 {
+.testimonial-container .testimonial-attribute h6 {
   font-size: 14px; }
 
 .fast-growing {
@@ -1815,6 +2090,8 @@ section {
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 0px; }
+    .footer ul li a {
+      font-size: 12px; }
 
 section::before {
   display: block;
@@ -1831,7 +2108,7 @@ section::before {
   cursor: pointer;
   width: 50px;
   height: 50px;
-  background-color: #333;
+  background-color: #323840;
   text-indent: -9999px;
   display: none;
   -webkit-border-radius: 60px;
