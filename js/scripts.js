@@ -80,15 +80,15 @@ $( document ).ready(function() {
   }
   scroll_if_anchor(window.location.hash);
   $("body").on("click", "a", scroll_if_anchor);
-  
+
   $(window).scroll(function(){
     $(".fa-angle-double-down").css("opacity", 1 - $(window).scrollTop() / 250 );
     if ($(this).scrollTop() > 300) {
         $('.header').addClass('nav-fade-in').fadeIn();
-        $('.header li a').removeClass('text-white').addClass('text-black');
+        $('.header li a, .logo a').removeClass('text-white').addClass('text-black');
     }else {
         $('.header').removeClass('nav-fade-in');
-        $('.header li a').removeClass('text-black').addClass('text-white');
+        $('.header li a, .logo a').removeClass('text-black').addClass('text-white');
     }
     if ($(this).scrollTop() > 2000) {
         $('#scroll').fadeIn();

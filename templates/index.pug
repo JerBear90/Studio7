@@ -26,9 +26,10 @@ html(lang="en")
     header.header
       .container
         .logo
-          h3.mb-0.text-uppercase.bold Studio
-            span.text-green 7
-          .caption Transparent. Web. Consulting.
+          a(href="#home")
+            h3.mb-0.text-uppercase.bold Studio
+              span.text-green 7
+            .caption Transparent. Web. Consulting.
         input#menu-btn.menu-btn(type='checkbox')
         label.menu-icon(for='menu-btn')
           span.navicon
@@ -310,9 +311,10 @@ html(lang="en")
             hr.green.mt-0
             p We would love to hear about your project and how we can collaborate to get the job done.
             p Not quite ready for a project, but want to see how much it might cost? Feel free to contact us, we are more than happy to hear your vision and give you an estimate on pricing.
-            p.bold If it's an emergency feel free to reach out directly via email @
+            p.bold If it's an emergency feel free to 
               span
-                a.text-dark-gray(href="mailto:'studio7inquiry@gmail.com'") Studio7
+                a.text-green(href="mailto:'studio7inquiry@gmail.com'") email 
+              span us directly.
           .six.cols.float-right
             script(src="https://form.jotform.com/jsform/80647736784168")
 
@@ -322,25 +324,12 @@ html(lang="en")
           span
         .row
           .six.cols.xs-text-center
-            h3.mb-0.text-uppercase.bold Studio
-              span.text-green 7
-            ul.ml-0.mb-0.mt-0
-              li
-                a(href="#home") Home
-                  span.pl-10 |
-              li
-                a(href="#services") Services
-                  span.pl-10 |
-              li
-                a(href="#clients") Clients
-                  span.pl-10 |
-              li
-                a(href="#about") About
-                  span.pl-10 |
-              li
-                a(href="#contact") Contact
+            a(href="#home")
+              h3.mb-0.text-uppercase.bold Studio
+                span.text-green 7
+              .caption Transparent. Web. Consulting.          
           .six.cols
-            p.copyright.mt-20.text-right.xs-text-center &copy;Copyright 2018
+            .copyright.mt-50.text-right.xs-text-center &copy;Copyright 2018
 
       script(src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js')
       script(src='js/scripts.js')
