@@ -80,6 +80,7 @@ $( document ).ready(function() {
   }
   scroll_if_anchor(window.location.hash);
   $("body").on("click", "a", scroll_if_anchor);
+  $('.logo a').addClass('text-white');
 
   $(window).scroll(function(){
     $(".fa-angle-double-down").css("opacity", 1 - $(window).scrollTop() / 250 );
