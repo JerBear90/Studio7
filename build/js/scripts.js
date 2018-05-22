@@ -66,11 +66,15 @@ $( document ).ready(function() {
 
   function scroll_if_anchor(href) {
       href = typeof(href) == "string" ? href : $(this).attr("href");
-      var fromTop = 100;
+      var fromTop = 90;
       if(href.indexOf("#") == 0) {
           var $target = $(href);
           if($target.length) {
               $('html, body').animate({ scrollTop: $target.offset().top - fromTop });
+              $(".header li a").click(function() {
+                $(this).parent().addClass('active').siblings().removeClass('active');
+
+              });
               if(history && "pushState" in history) {
                   history.pushState({}, document.title, window.location.pathname + href);
                   return false;
@@ -79,6 +83,7 @@ $( document ).ready(function() {
       }
   }
   scroll_if_anchor(window.location.hash);
+
   $("body").on("click", "a", scroll_if_anchor);
   $('.logo a').addClass('text-white');
 

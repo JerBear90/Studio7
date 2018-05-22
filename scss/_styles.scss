@@ -200,11 +200,7 @@ section{
 }
 
 .clients{
-  margin-top: 80px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100;
   img{
     width: 100px;
     margin: 0px auto;
@@ -334,10 +330,17 @@ section::before {
   }
 }
 
-.typed{
-  height: 100px;
-  width: 100%;
-  margin: 0px auto;
+.typed_wrap{
+  .typed{
+    height: 100px;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .typed-cursor{display: none;}
+}
+
+.active{
+  font-weight: bold;
 }
 
 body > div:nth-child(14){

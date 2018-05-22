@@ -16,10 +16,14 @@
     list-style: none;
     overflow: hidden;
   }
+  li:nth-child(-n+5){
+    width: 85px;
+    text-align: center;
+  }
   li {
     padding-bottom: 10px;
-    transition: .5s all;
-    &:hover {
+    transition: .2s all;
+    &:hover, &:active {
       // background-color: hsla(0,0%, 0%, 0.3);
       font-weight: bold;
     }
